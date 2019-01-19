@@ -9,7 +9,7 @@ Requisitos
 Setup & running
 ==
 - `pip install -r requirements.txt`
-- `python main.py
+- `python main.py`
 
 Configuración de la ejecución
 ==
@@ -22,7 +22,7 @@ el nombre de fichero en la variable `filename`.
 
 Lo genera automaticamente el do-file de Stata a partir del RawData de zTree. Dicho fichero bere contener las siguientes columnas:
 
-group,P1,P2,...,PN,type,action,period
+`group,P1,P2,...,PN,type,action,period
 
 Donde:
 
@@ -35,7 +35,7 @@ Donde:
 
 Parámetros de los datos
 ===
-En `main.py``
+En `main.py`:
 
 * N = numero de jugadores por grupo (típicamente 15).
 * NG = numero de grupos unicos en el fichero (si generamos solo para 1 sesion, este parametro valdra tipicamente 3).
@@ -64,6 +64,7 @@ En `output_images` habrá 1 imagen por grupo/periodo, llamadas:
 
 Por ejemplo, para el experimento 'identities', tendremos:
 
+```
 ENDO_HIGH_FIXED_1781_-4.png
 ENDO_HIGH_FIXED_1781_-3.png
 ...
@@ -78,14 +79,14 @@ ENDO_HIGH_FIXED_1782_20.png
 ENDO_HIGH_FIXED_1783_-4.png
 ...
 ENDO_HIGH_FIXED_1783_20.png
-
+```
 
 Sobre la web de las 'simulaciones'
 ==
 
 Una vez las imagenes han sido generadas, hay que subirlas al servidor vlineex. La pagina web que las sirve con los controles de animacion esta en:
 
-`/var/www/html/lineex/on/conflict
+`/var/www/html/lineex/on/conflict`
 
 Aqui hay 2 carpetas, 'one_shot' y 'repeated'. Solo trabajamos con 'repeated' ahora mismo. Dentro de ella hay a su vez 2 carpetas: 
 
